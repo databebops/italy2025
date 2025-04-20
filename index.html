@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italy Travel Guide: 18-Day Itinerary (2025)</title>
+    <style>
+        /* Global Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background-color: #f9f9f9; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background-color: #1a5276; color: white; padding: 20px 0; text-align: center; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        h2 { font-size: 2rem; margin: 30px 0 15px; color: #1a5276; border-bottom: 2px solid #1a5276; padding-bottom: 5px; }
+        h3 { font-size: 1.5rem; margin: 25px 0 10px; color: #2874a6; }
+        h4 { font-size: 1.2rem; margin: 20px 0 10px; color: #3498db; }
+        p { margin-bottom: 15px; }
+        ul, ol { margin: 15px 0; padding-left: 30px; }
+        li { margin-bottom: 8px; }
+        a { color: #2874a6; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { font-weight: bold; }
+        /* Navigation */
+        nav { background-color: #2874a6; padding: 10px 0; }
+        nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; padding: 0; margin: 0; }
+        nav li { margin: 0 15px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 10px; border-radius: 5px; transition: background-color 0.3s; }
+        nav a:hover { background-color: #1a5276; text-decoration: none; }
+        /* Itinerary Table */
+        .itinerary-table { width: 100%; border-collapse: collapse; margin: 20px 0; overflow-x: auto; display: block; } /* Added overflow */
+        .itinerary-table th, .itinerary-table td { border: 1px solid #ddd; padding: 12px; text-align: left; white-space: nowrap;} /* Added nowrap */
+        .itinerary-table th { background-color: #2874a6; color: white; position: sticky; top: 0; z-index: 1;} /* Sticky header */
+        .itinerary-table tr:nth-child(even) { background-color: #f2f2f2; }
+        .itinerary-table tr:hover { background-color: #e6f7ff; }
+        /* Cards */
+        .card-container { display: flex; flex-wrap: wrap; justify-content: space-around; margin: 20px 0; gap: 20px;} /* Use gap */
+        .card { width: calc(33.33% - 20px); /* Adjusted width slightly */ min-width: 280px; /* Minimum width */ margin-bottom: 30px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; display: flex; flex-direction: column; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+        .card-img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; flex-grow: 1; } /* Allow content to grow */
+        .card h3 { margin-top: 0; margin-bottom: 10px; }
+        /* Maps */
+        .map-container { margin: 20px 0; height: 400px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        /* Responsive */
+        @media (max-width: 992px) { /* Adjusted breakpoint */
+            .card { width: calc(50% - 15px); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+            h3 { font-size: 1.3rem; }
+        }
+        @media (max-width: 576px) {
+            .card { width: 100%; }
+            .itinerary-table { font-size: 0.9rem; white-space: normal;} /* Allow wrap on small screens */
+            nav li { margin: 5px 10px; }
+        }
+        /* Special Sections */
+        .highlight-box { background-color: #e6f7ff; border-left: 5px solid #2874a6; padding: 15px; margin: 20px 0; border-radius: 0 8px 8px 0; }
+        .muslim-friendly { background-color: #e8f8f5; border-left: 5px solid #16a085; }
+        .budget-tips { background-color: #fef9e7; border-left: 5px solid #f1c40f; }
+        .remote-work { background-color: #f4ecf7; border-left: 5px solid #8e44ad; }
+        .warning-box { background-color: #fdebd0; border-left: 5px solid #f39c12; }
+        .footer { background-color: #1a5276; color: white; text-align: center; padding: 20px 0; margin-top: 50px; }
+        /* Tab System */
+        .tab { overflow: hidden; border: 1px solid #ccc; background-color: #f1f1f1; border-radius: 8px 8px 0 0; }
+        .tab button { background-color: inherit; float: left; border: none; outline: none; cursor: pointer; padding: 14px 16px; transition: 0.3s; font-size: 16px; } /* Adjusted font size */
+        .tab button:hover { background-color: #ddd; }
+        .tab button.active { background-color: #2874a6; color: white; }
+        .tabcontent { display: none; padding: 20px; border: 1px solid #ccc; border-top: none; border-radius: 0 0 8px 8px; animation: fadeEffect 1s; }
+        @keyframes fadeEffect { from {opacity: 0;} to {opacity: 1;} }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Italy Travel Guide</h1>
+            <p>18-Day Itinerary: April 26 - May 13, 2025</p>
+            <p>Padova → (Venice, Vicenza) → Bologna → Florence → Rome → Naples (+Amalfi)</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#itinerary">Itinerary</a></li>
+            <li><a href="#padova">Padova</a></li>
+            <li><a href="#bologna">Bologna</a></li>
+            <li><a href="#florence">Florence</a></li>
+            <li><a href="#rome">Rome</a></li>
+            <li><a href="#naples">Naples</a></li>
+            <li><a href="#muslim-friendly">Muslim-Friendly</a></li>
+            <li><a href="#budget">Budget Notes</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="overview">
+            <h2>Trip Overview</h2>
+            <p>Welcome to your personalized guide for an 18-day adventure through Italy in Spring 2025! This itinerary balances iconic sights, culinary experiences, historical exploration, and practical considerations for a Muslim couple. Starting from Padova (via Treviso), you'll journey through the gastronomic heart of Bologna, immerse yourselves in Renaissance Florence, explore ancient Rome, and finish in vibrant Naples with coastal explorations. The plan accommodates remote work days and is mindful of budget considerations, though the original €4000 target may be tight for 18 days across these locations.</p>
+
+            <div class="highlight-box">
+                <h3>Key Information</h3>
+                <ul>
+                    <li><strong>Duration:</strong> 18 days (April 26 - May 13, 2025)</li>
+                    <li><strong>Route:</strong> Padova (via Treviso) → Bologna → Florence → Rome → Naples</li>
+                    <li><strong>Remote Work Days:</strong> Apr 28, 29 (Padova); May 5, 6 (Rome); May 12, 13 (Naples)</li>
+                    <li><strong>Budget Target:</strong> Originally €4000 (Manage carefully for 18 days)</li>
+                    <li><strong>Transportation:</strong> Primarily trains, local buses/trains, optional ferry (Naples)</li>
+                </ul>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d2166048.3209728515!2d10.86046250898804!3d42.995231521785996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x477eb1daf1d63d89%3A0x7ba3c6f0bd92102f!2sVenice%2C%20Metropolitan%20City%20of%20Venice%2C%20Italy!3m2!1d45.440379!2d12.315954699999999!4m5!1s0x477eda5841ab30cf%3A0xc18236edaa1a2e2c!2sPadua%2C%20Province%20of%20Padua%2C%20Italy!3m2!1d45.4105029!2d11.8782071!4m5!1s0x477f317de4d2516f%3A0x6a8ec0930b8440bc!2sVicenza%2C%20Province%20of%20Vicenza%2C%20Italy!3m2!1d45.546181499999996!2d11.541377899999999!4m5!1s0x477eda5841ab30cf%3A0xc18236edaa1a2e2c!2sPadua%2C%20Province%20of%20Padua%2C%20Italy!3m2!1d45.4105029!2d11.8782071!4m5!1s0x477fd498e951c40b%3A0xa2e17c015ba49441!2sBologna!3m2!1d44.494887!2d11.3426162!4m5!1s0x132a56a680d2d6ad%3A0x93d57917efc72a03!2sFlorence!3m2!1d43.7699685!2d11.257670599999999!4m5!1s0x132f61a439c0ffef%3A0xa4307dbef261a994!2sRome%20Termini%20Station%2C%20Via%20Giovanni%20Giolitti%2C%20Rome%2C%20Metropolitan%20City%20of%20Rome%20Capital%2C%20Italy!3m2!1d41.9012873!2d12.501575599999999!4m5!1s0x133b0866db7afaeb%3A0xd23a43cc658cb87e!2sNaples%2C%20Metropolitan%20City%20of%20Naples%2C%20Italy!3m2!1d40.8517746!2d14.2681244!4m5!1s0x133b99536dbf5b61%3A0x2644eb57abc0ce40!2sSorrento%2C%20Metropolitan%20City%20of%20Naples%2C%20Italy!3m2!1d40.626396899999996!2d14.3764167!4m5!1s0x133b9768a710d21b%3A0x8cde0b2863cede31!2sPositano%2C%20SA%2C%20Italy!3m2!1d40.6294824!2d14.482346199999999!5e0!3m2!1sen!2sfr!4v1745131109947!5m2!1sen!2sfr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="itinerary">
+            <h2>Detailed Itinerary Table</h2>
+            <div style="overflow-x:auto;"> <!-- Wrapper div for better scrolling on mobile -->
+                <table class="itinerary-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day #</th>
+                            <th>Location</th>
+                            <th>Main Activities / Travel</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Phase 1: Padova -->
+                        <tr> <td>Apr 26</td> <td>1 (Fri)</td> <td>Padova</td> <td>Arrive TSF 2:30 PM (from BVA); Bus 101 to Padova; Check-in Airbnb; Evening walk (Prato della Valle)</td> <td>Flight BVA->TSF BOOKED. Airbnb BOOKED.</td> </tr>
+                        <tr> <td>Apr 27</td> <td>2 (Sat)</td> <td>Padova (Venice)</td> <td>Full Day Trip to Venice via Train (8:22 AM arr / 10:15 PM dep); St Mark's, Doge's Palace (ext.), Rialto, Gondola/Traghetto, etc.</td> <td>Padova-Venice Train BOOKED. Long day!</td> </tr>
+                        <tr> <td>Apr 28</td> <td>3 (Sun)</td> <td>Padova</td> <td>Remote Work (10-12, 14-17); Explore markets, Basilica S. Antonio, Orto Botanico</td> <td><strong>WORK DAY 1</strong>. Check Airbnb WiFi.</td> </tr>
+                        <tr> <td>Apr 29</td> <td>4 (Mon)</td> <td>Padova (Vicenza/Verona?)</td> <td>Remote Work; Potential evening trip to Vicenza/Verona after work.</td> <td><strong>WORK DAY 2</strong>. Evening trip optional.</td> </tr>
+                        <tr> <td>Apr 30</td> <td>5 (Tue)</td> <td>Padova → Bologna</td> <td>10AM Airbnb Checkout; Train (10:35->11:39); Check-in UNAHotel Bologna (leave luggage); Food exploration (Ragù, Mortadella, Gelato), City walk (Piazze, Towers).</td> <td>Padova-Bologna Train BOOKED. UNAHotel BOOKED.</td> </tr>
+                        <!-- Phase 2: Bologna / Florence -->
+                        <tr> <td>May 1</td> <td>6 (Wed)</td> <td>Bologna → Florence</td> <td>AM Bologna (Market, San Petronio); Lunch; 12PM Hotel Checkout (leave luggage); Train (16:42->17:20); Arrive Florence, Check-in Hotel Santa Croce; Giotto Tower Climb (Sunset).</td> <td>Bologna-Florence Train BOOKED. Hotel Santa Croce BOOKED. <strong>Public Holiday</strong>. Giotto Tower BOOKED.</td> </tr>
+                        <tr> <td>May 2</td> <td>7 (Thu)</td> <td>Florence</td> <td>AM Uffizi Gallery (Booked 8:15/8:45, ~3hrs); Lunch; PM Boboli/Bardini Gardens OR Palazzo Pitti; Evening Sunset at Piazzale Michelangelo (Taxi recommended).</td> <td>Book Uffizi ASAP!</td> </tr>
+                        <tr> <td>May 3</td> <td>8 (Fri)</td> <td>Florence</td> <td>Pasta Making Class (AM/Afternoon? Book ASAP!); Lunch (from class?); Basilica Santa Croce / Leather School; Pizza & Gelato Evening.</td> <td>Book Pasta Class. Pack for tomorrow.</td> </tr>
+                        <tr> <td>May 4</td> <td>9 (Sat)</td> <td>Florence → Rome</td> <td>AM Accademia Free Sunday Attempt (Queue by 7AM! High risk); **Must leave Accademia area by 10:15 AM**. Contingency: Market/Piazza walk; Quick Shower; 11:30 Check out (leave luggage); Quick Lunch; Retrieve luggage; Taxi to station; Train (16:28->18:00); Arrive Rome, Check-in Airbnb.</td> <td><strong>1st Sunday - FREE Museums (Huge Queues Expected)</strong>. Accademia attempt is optional & risky. Rome Airbnb BOOKED.</td> </tr>
+                        <!-- Phase 3: Rome -->
+                        <tr> <td>May 5</td> <td>10 (Sun)</td> <td>Rome</td> <td>Remote Work (10-12, 14-17); Evening exploration near Airbnb / Piazza stroll / Gelato.</td> <td><strong>WORK DAY 3</strong>. Check Airbnb WiFi.</td> </tr>
+                        <tr> <td>May 6</td> <td>11 (Mon)</td> <td>Rome</td> <td>Remote Work (10-12, 14-17); Evening explore Trastevere or Monti.</td> <td><strong>WORK DAY 4</strong>.</td> </tr>
+                        <tr> <td>May 7</td> <td>12 (Tue)</td> <td>Rome</td> <td>AM Piazza Navona, Pantheon, Trevi Fountain (go early!); Lunch; PM Vatican Museums (Booked 4 PM); St Peter's Basilica/Square.</td> <td>Vatican BOOKED. Modest dress needed.</td> </tr>
+                        <tr> <td>May 8</td> <td>13 (Wed)</td> <td>Rome</td> <td>AM Colosseum/Forum/Palatine Hill (Book ASAP - standard/arena tix or tour); Lunch near Forum/Monti; PM Rest / Capitoline Museums / Jewish Ghetto.</td> <td>Book Colosseum/Forum ASAP!</td> </tr>
+                        <tr> <td>May 9</td> <td>14 (Thu)</td> <td>Rome → Naples</td> <td>AM Rome (checkout Airbnb, maybe visit a Piazza); Early Lunch; Train (14:15->15:28); Arrive Naples; Check-in San Ferdinando Airbnb by 4 PM; Evening Pompeii/Herculaneum Trip (Circumvesuviana).</td> <td>Rome-Naples Train to Book. Naples Airbnb BOOKED. Book Pompeii/Herc tix online.</td> </tr>
+                        <!-- Phase 4: Naples -->
+                        <tr> <td>May 10</td> <td>15 (Fri)</td> <td>Naples (Sorrento)</td> <td>VERY Early Circumvesuviana train to Sorrento; Explore town, Bagni Regina Giovanna (bus+walk); Lunch in Sorrento; Train back to Naples; Evening Lungomare / Dinner.</td> <td>Long day trip. Check bus schedule for Bagni.</td> </tr>
+                        <tr> <td>May 11</td> <td>16 (Sat)</td> <td>Naples (Capri/Positano)</td> <td>CHOOSE ONE: Full Day Trip to Capri via Ferry OR Full Day Trip to Positano via Ferry (direct or via Sorrento). Book ferries.</td> <td>Decide & Book Ferries. Both are long days.</td> </tr>
+                        <tr> <td>May 12</td> <td>17 (Sun)</td> <td>Naples</td> <td>Remote Work (10-12, 14-17); Morning/Lunch explore Piazza Plebiscito / Quick Pizza Fritta; Evening final dinner, pack.</td> <td><strong>WORK DAY 5</strong>.</td> </tr>
+                        <tr> <td>May 13</td> <td>18 (Mon)</td> <td>Naples → Paris</td> <td>AM Remote Work (confirm finish time & checkout plan w/ host - late checkout?); Final pack; Transfer (Alibus/Taxi) to NAP airport; Depart NAP 7:15 PM.</td> <td><strong>WORK DAY 6 + DEPARTURE</strong>. Allow ample airport time (3+ hrs before flight).</td> </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ==================== PADOVA SECTION ==================== -->
+        <section id="padova">
+            <h2>Padova (April 26-30)</h2>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'padova-overview')" id="defaultOpen">Overview</button>
+                <button class="tablinks" onclick="openTab(event, 'padova-attractions')">Attractions</button>
+                <button class="tablinks" onclick="openTab(event, 'padova-food')">Food</button>
+                <button class="tablinks" onclick="openTab(event, 'padova-tips')">Tips</button>
+            </div>
+
+            <div id="padova-overview" class="tabcontent">
+                <p>Your Italian journey begins in Padova, a historic university city in the Veneto region. You'll use it as a convenient base for your first few nights, including a day trip to Venice and accommodating your first two remote work days.</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89810.92750521675!2d11.82779054094084!3d45.41140681450389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda58a5875091%3A0x57ec10e13174e4a3!2sPadua%2C%20Province%20of%20Padua%2C%20Italy!5e0!3m2!1sen!2sus!4v1712606836701!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <h3>Daily Breakdown (Padova Base)</h3>
+                <ul>
+                    <li><strong>Day 1 (Apr 26, Fri):</strong> Arrive TSF, Bus 101 to Padova, Check-in Airbnb [BOOKED], Evening walk (Prato della Valle).</li>
+                    <li><strong>Day 2 (Apr 27, Sat):</strong> Full Day Trip to Venice via Train [BOOKED].</li>
+                    <li><strong>Day 3 (Apr 28, Sun):</strong> Remote Work (10-12, 14-17). Explore Padova markets, Basilica S. Antonio, Orto Botanico. <strong>[WORK DAY 1]</strong></li>
+                    <li><strong>Day 4 (Apr 29, Mon):</strong> Remote Work. Optional evening trip to Vicenza/Verona. <strong>[WORK DAY 2]</strong></li>
+                    <li><strong>Day 5 (Apr 30, Tue):</strong> 10 AM Checkout. Train Padova -> Bologna [BOOKED].</li>
+                </ul>
+                <div class="highlight-box remote-work">
+                    <h4>Remote Work (Padova)</h4>
+                    <p>Working from your Airbnb [BOOKED]. Confirm WiFi reliability upon arrival. Schedule allows for morning/lunch exploration and evening activities.</p>
+                </div>
+            </div>
+
+            <div id="padova-attractions" class="tabcontent">
+                <h3>Padova & Venice Attractions</h3>
+                <div class="card-container">
+                    <!-- Padova Cards -->
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Prato+della+Valle" alt="Prato della Valle" class="card-img">
+                        <div class="card-content">
+                            <h3>Prato della Valle</h3>
+                            <p>One of Europe's largest and most beautiful squares, featuring a central island surrounded by statues.</p>
+                            <p><strong>Entry:</strong> Free</p>
+                            <a href="https://goo.gl/maps/4wZ2zB6z9J5Y8s4x5" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Basilica+S.+Antonio" alt="Basilica di Sant'Antonio" class="card-img">
+                        <div class="card-content">
+                            <h3>Basilica di Sant'Antonio</h3>
+                            <p>Major pilgrimage site dedicated to St. Anthony, impressive architecture.</p>
+                            <p><strong>Entry:</strong> Free</p>
+                            <a href="https://goo.gl/maps/p6R5P9M1F6S3QzN5A" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Orto+Botanico" alt="Orto Botanico" class="card-img">
+                        <div class="card-content">
+                            <h3>Orto Botanico (Botanical Garden)</h3>
+                            <p>UNESCO World Heritage site, the world's oldest academic botanical garden.</p>
+                            <p><strong>Entry:</strong> Fee applies (Check official site)</p>
+                            <a href="https://goo.gl/maps/D9wX3V8KzN5G7rQ9A" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                     <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Palazzo+Ragione" alt="Palazzo della Ragione" class="card-img">
+                        <div class="card-content">
+                            <h3>Palazzo della Ragione</h3>
+                            <p>Medieval market hall with a vast frescoed upper hall, flanked by market squares.</p>
+                            <p><strong>Entry:</strong> Fee applies to hall (Check official site)</p>
+                            <a href="https://goo.gl/maps/h7dFpY5kKqM6z3cE6" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                    <!-- Venice Cards (from Day Trip) -->
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/2874a6/ffffff?text=St+Mark%27s+Square" alt="St. Mark's Square" class="card-img">
+                        <div class="card-content">
+                            <h3>St. Mark's Square (Venice)</h3>
+                            <p>Principal public square of Venice, includes Basilica, Campanile, Doge's Palace.</p>
+                            <p><strong>Entry:</strong> Square free, attractions vary.</p>
+                            <a href="https://goo.gl/maps/j1q7LzE6KkK9w9Zq8" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/2874a6/ffffff?text=Rialto+Bridge" alt="Rialto Bridge" class="card-img">
+                        <div class="card-content">
+                            <h3>Rialto Bridge (Venice)</h3>
+                            <p>Iconic stone arch bridge crossing the Grand Canal, lined with shops.</p>
+                            <p><strong>Entry:</strong> Free</p>
+                            <a href="https://goo.gl/maps/aF4JgP3sY5Q9yQzS9" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="padova-food" class="tabcontent">
+                <h3>Food in Padova & Veneto</h3>
+                <div class="highlight-box">
+                    <h4>Essential Dishes</h4>
+                    <ul>
+                        <li><strong>Bigoli:</strong> Thick spaghetti-like pasta, often served with duck ragù (anatra) or anchovy sauce (in salsa). Ask for 'senza maiale' if needed for ragù.</li>
+                        <li><strong>Risotto:</strong> Popular in Veneto, try Risotto al Radicchio (with red chicory).</li>
+                        <li><strong>Cicchetti (Venice):</strong> Venetian tapas - small snacks served in 'bacari' (wine bars). Look for fish/veg options.</li>
+                        <li><strong>Sarde in Saor (Venice):</strong> Sweet and sour sardines with onions, pine nuts, raisins (adventurous!).</li>
+                        <li><strong>Polenta:</strong> Often served as a side dish.</li>
+                    </ul>
+                </div>
+                <h4>Local Recommendations (Padova)</h4>
+                <ul>
+                    <li><strong>Osteria L'Anfora:</strong> Traditional trattoria vibes.</li>
+                    <li><strong>Trattoria Al Fungo:</strong> Known for local dishes.</li>
+                    <li><strong>Piazza delle Erbe/Frutta Markets:</strong> Great for fresh produce, cheese, snacks.</li>
+                    <li><strong>Gelateria La Romana:</strong> Quality gelato.</li>
+                </ul>
+                 <h4>Venice Food Stops (Day Trip)</h4>
+                <ul>
+                    <li><strong>Cantina Do Spade / All'Arco:</strong> Near Rialto for Cicchetti.</li>
+                </ul>
+            </div>
+
+            <div id="padova-tips" class="tabcontent">
+                <h3>Practical Tips (Padova Base)</h3>
+                <div class="highlight-box budget-tips">
+                    <h4>Money-Saving</h4>
+                    <ul>
+                        <li>Using Padova as a base for Venice can be cheaper than staying in Venice itself.</li>
+                        <li>Utilize local markets (Piazza delle Erbe/Frutta) for lunch supplies or snacks.</li>
+                        <li>Enjoy free sights like Prato della Valle and Basilica di Sant'Antonio.</li>
+                    </ul>
+                </div>
+                <h4>Transportation</h4>
+                <ul>
+                    <li>Padova city center is very walkable.</li>
+                    <li>Bus Line 101 from Treviso Airport (TSF) is convenient.</li>
+                    <li>Frequent regional trains connect Padova to Venice (~30-45 mins) and Vicenza (~20 mins). Book Venice train tickets in advance if possible, especially for specific times.</li>
+                    <li>Circumvesuviana train needed for Pompeii/Herculaneum/Sorrento from Naples later in the trip - different system.</li>
+                </ul>
+                <h4>Accommodation</h4>
+                <ul>
+                    <li><strong>Your Airbnb:</strong> [BOOKED] - Confirm exact address/check-in details. Crucially, check WiFi speed/reliability upon arrival for work days.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ==================== BOLOGNA SECTION ==================== -->
+        <section id="bologna">
+            <h2>Bologna (April 30 - May 1)</h2>
+             <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'bologna-overview')">Overview</button>
+                <button class="tablinks" onclick="openTab(event, 'bologna-attractions')">Attractions</button>
+                <button class="tablinks" onclick="openTab(event, 'bologna-food')">Food</button>
+                <button class="tablinks" onclick="openTab(event, 'bologna-tips')">Tips</button>
+            </div>
+
+            <div id="bologna-overview" class="tabcontent">
+                <p>Affectionately known as "La Grassa" (the fat one), Bologna is Italy's culinary capital. This short but delicious stop focuses on experiencing its rich food culture and exploring its historic center, characterized by terracotta buildings and extensive porticoes.</p>
+                 <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182170.6786316491!2d11.240573197745144!3d44.496609630831004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fd498e46a4199%3A0x15a57f876e569868!2sBologna%2C%20Metropolitan%20City%20of%20Bologna%2C%20Italy!5e0!3m2!1sen!2sus!4v1712607451646!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                 <h3>Daily Breakdown (Bologna)</h3>
+                 <ul>
+                    <li><strong>Day 5 (Apr 30, Tue):</strong> Arrive from Padova (11:39 AM). Check-in/Leave luggage at UNAHotel [BOOKED]. Lunch(es!), Gelato, City Exploration (Piazze, Towers exterior, Quadrilatero). Dinner, More Gelato!</li>
+                    <li><strong>Day 6 (May 1, Wed):</strong> AM Explore Quadrilatero/San Petronio Basilica. Final Lunch & Gelato. 12 PM Checkout (leave luggage). Train to Florence (4:42 PM). <strong>[Public Holiday]</strong></li>
+                 </ul>
+             </div>
+
+             <div id="bologna-attractions" class="tabcontent">
+                 <h3>Highlights of Bologna</h3>
+                 <div class="card-container">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Piazza+Maggiore" alt="Piazza Maggiore" class="card-img">
+                        <div class="card-content">
+                            <h3>Piazza Maggiore & Nettuno</h3>
+                            <p>Bologna's main square, surrounded by important buildings like Palazzo d'Accursio and Basilica di San Petronio. Adjacent Piazza del Nettuno features the Neptune Fountain.</p>
+                             <p><strong>Entry:</strong> Free</p>
+                            <a href="https://goo.gl/maps/q7S4V8H9sT9X3R7C6" target="_blank">View Piazza Maggiore</a> | <a href="https://goo.gl/maps/u7T5X8qH9yY3R7Zq9" target="_blank">View P. Nettuno</a>
+                        </div>
+                    </div>
+                     <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Due+Torri" alt="Two Towers" class="card-img">
+                        <div class="card-content">
+                            <h3>Le Due Torri (Two Towers)</h3>
+                            <p>Iconic symbols of Bologna: Asinelli and Garisenda towers. Climbing Asinelli (requires booking, strenuous) offers city views.</p>
+                             <p><strong>Entry:</strong> Free to view, Fee/Booking to climb Asinelli.</p>
+                             <a href="https://goo.gl/maps/k8E3T9W5X7R2wZzB6" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Quadrilatero" alt="Quadrilatero Market Area" class="card-img">
+                        <div class="card-content">
+                             <h3>Quadrilatero</h3>
+                             <p>Ancient market district near Piazza Maggiore, full of narrow streets, food shops (Salumerie, pasta shops), cafes, and restaurants.</p>
+                             <p><strong>Entry:</strong> Free to wander</p>
+                             <a href="https://goo.gl/maps/j8D4V7G9Q6R1wZzE8" target="_blank">View on Map</a>
+                         </div>
+                     </div>
+                     <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=San+Petronio" alt="San Petronio Basilica" class="card-img">
+                         <div class="card-content">
+                             <h3>Basilica di San Petronio</h3>
+                             <p>Massive, partially unfinished Gothic basilica on Piazza Maggiore. Notable for its sundial.</p>
+                             <p><strong>Entry:</strong> Free (donation requested, fee for terrace/chapel)</p>
+                             <a href="https://goo.gl/maps/n8V7X8qH9yY3R7Zq8" target="_blank">View on Map</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div id="bologna-food" class="tabcontent">
+                <h3>Must-Try Food in Bologna</h3>
+                 <div class="highlight-box">
+                     <h4>Essential Bolognese Dishes</h4>
+                     <ul>
+                         <li><strong>Tagliatelle al Ragù:</strong> Fresh egg pasta with slow-cooked meat sauce (the authentic 'Bolognese').</li>
+                         <li><strong>Mortadella:</strong> Large Italian sausage/luncheon meat, often studded with pistachios. Fantastic in sandwiches.</li>
+                         <li><strong>Tortellini in Brodo:</strong> Small, meat-filled pasta dumplings served in a clear broth.</li>
+                         <li><strong>Lasagne Verde alla Bolognese:</strong> Layers of green (spinach) pasta, ragù, béchamel sauce, and Parmigiano-Reggiano.</li>
+                         <li><strong>Gramigna alla Salsiccia:</strong> Short, curly pasta typically served with a sausage-based sauce (ask re: pork).</li>
+                         <li><strong>Gelato:</strong> High quality is expected here!</li>
+                     </ul>
+                 </div>
+                 <h4>Specific Recommendations (from your itinerary)</h4>
+                 <ul>
+                    <li><strong>Trattoria Anna Maria / Osteria dell'Orsa:</strong> Classic spots for Tagliatelle al Ragù.</li>
+                    <li><strong>Salumeria in Quadrilatero:</strong> For Mortadella platters or sandwiches.</li>
+                    <li><strong>La Sorbetteria Castiglione:</strong> Highly rated gelato (<a href="https://goo.gl/maps/h8E3T9W5X7R2wZzD7" target="_blank">Map</a>).</li>
+                    <li><strong>Cremeria Santo Stefano:</strong> Excellent gelato (<a href="https://goo.gl/maps/p9R5P9M1F6S3QzN5A" target="_blank">Map</a>).</li>
+                    <li><strong>Mercato di Mezzo:</strong> Indoor food market for atmosphere/quick bites (<a href="https://maps.app.goo.gl/gX7zR9sP4tJ6yWfE7" target="_blank">Map</a>).</li>
+                 </ul>
+                 <div class="warning-box">
+                     <h4>Parmigiano Factory Tour Note</h4>
+                     <p>As noted, these tours are usually outside the city and require pre-booking. It's not feasible for a spontaneous visit on arrival day.</p>
+                 </div>
+             </div>
+
+             <div id="bologna-tips" class="tabcontent">
+                <h3>Practical Tips (Bologna)</h3>
+                 <div class="highlight-box budget-tips">
+                     <h4>Money-Saving</h4>
+                     <ul>
+                        <li>Focus on trattorias slightly away from Piazza Maggiore for better value.</li>
+                        <li>Enjoying Mortadella sandwiches or snacks from the Quadrilatero is delicious and affordable.</li>
+                        <li>Walking is the best (and free) way to see the city center.</li>
+                     </ul>
+                 </div>
+                 <h4>Transportation</h4>
+                <ul>
+                    <li>Bologna Centrale station is well-connected. Your hotel is nearby.</li>
+                    <li>The historic center is largely pedestrianized and covered by porticoes, making walking pleasant. Bike rental is an option but potentially less relaxing.</li>
+                </ul>
+                 <h4>Accommodation</h4>
+                 <ul>
+                    <li><strong>UNAHotel Bologna:</strong> [BOOKED] Near station. Plan to leave luggage before check-in and after check-out. (<a href="https://maps.app.goo.gl/5tW6F2gN73u8pYwR7" target="_blank">Approx Map</a>)</li>
+                 </ul>
+             </div>
+        </section>
+
+        <!-- ==================== FLORENCE SECTION ==================== -->
+        <section id="florence">
+             <h2>Florence (May 1-4)</h2>
+             <div class="tab">
+                 <button class="tablinks" onclick="openTab(event, 'florence-overview')">Overview</button>
+                 <button class="tablinks" onclick="openTab(event, 'florence-attractions')">Attractions</button>
+                 <button class="tablinks" onclick="openTab(event, 'florence-food')">Food</button>
+                 <button class="tablinks" onclick="openTab(event, 'florence-tips')">Tips</button>
+             </div>
+
+             <div id="florence-overview" class="tabcontent">
+                <p>Welcome to Florence, the cradle of the Renaissance! Prepare to be awed by masterpieces of art and architecture. Your stay includes visits to world-class museums, iconic landmarks, potentially a cooking class, and culminates in a high-stakes attempt to see Michelangelo's David on a free museum Sunday.</p>
+                 <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184194.39999801734!2d11.12603804588307!3d43.77058947231132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a56a680d2d6ad%3A0x93d57917efc72a03!2sFlorence%2C%20Metropolitan%20City%20of%20Florence%2C%20Italy!5e0!3m2!1sen!2sus!4v1712607833741!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+                 <h3>Daily Breakdown (Florence)</h3>
+                 <ul>
+                    <li><strong>Day 6 (May 1, Wed):</strong> Arrive ~5:20 PM. Check-in Hotel Santa Croce [BOOKED]. Giotto Tower Climb (Sunset) [BOOKED]. Dinner. <strong>[Public Holiday]</strong></li>
+                    <li><strong>Day 7 (May 2, Thu):</strong> AM Uffizi Gallery [BOOK ASAP!]. Lunch. PM Boboli/Bardini Gardens OR Palazzo Pitti. Evening Sunset @ Piazzale Michelangelo.</li>
+                    <li><strong>Day 8 (May 3, Fri):</strong> AM/Afternoon Pasta Making Class [BOOK ASAP!]. Lunch. PM Basilica Santa Croce / Leather School. Evening Pizza & Gelato. Pack.</li>
+                    <li><strong>Day 9 (May 4, Sat):</strong> AM Accademia Free Sunday Attempt (Queue ~7AM, high risk!). Contingency plan if queue too long. Quick Shower/Checkout (11:30 AM). Quick Lunch. Taxi to Station. Train to Rome (4:28 PM) [BOOKED]. <strong>[1st Sunday - FREE Museums - Expect MASSIVE Queues]</strong></li>
+                 </ul>
+                 <div class="warning-box">
+                    <h4>Accademia Free Sunday Warning!</h4>
+                    <p>Official tickets for Accademia on May 2/3 were unavailable. Relying on Free Sunday (May 4th) is very risky due to extreme queues. Be prepared to queue by 7 AM and potentially miss out if the line is too long by ~9:30 AM to make your train schedule work.</p>
+                 </div>
+             </div>
+
+            <div id="florence-attractions" class="tabcontent">
+                <h3>Florence Highlights</h3>
+                 <div class="card-container">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Accademia+(David)" alt="Accademia Gallery" class="card-img">
+                        <div class="card-content">
+                            <h3>Accademia Gallery</h3>
+                            <p>Home to Michelangelo's David. Other works include 'Prisoners' and Florentine paintings.</p>
+                            <p><strong>Entry:</strong> Standard Fee / FREE 1st Sun (May 4). Booking essential on normal days (sold out for you). Expect huge queues on free day.</p>
+                            <a href="https://goo.gl/maps/f6bZ8K7wJqH2" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                     <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Uffizi+Gallery" alt="Uffizi Gallery" class="card-img">
+                         <div class="card-content">
+                            <h3>Uffizi Gallery</h3>
+                            <p>One of the world's top art museums, featuring masterpieces by Botticelli, Leonardo, Michelangelo, Raphael.</p>
+                             <p><strong>Entry:</strong> Fee applies. Timed entry booking **ESSENTIAL**. Book ASAP for May 2nd!</p>
+                            <a href="https://goo.gl/maps/sQ6kH2zJtU52" target="_blank">View on Map</a> | <a href="https://www.uffizi.it/en/the-uffizi" target="_blank">Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Duomo+Complex" alt="Duomo Complex" class="card-img">
+                        <div class="card-content">
+                            <h3>Duomo Complex</h3>
+                             <p>Florence Cathedral (Santa Maria del Fiore), Giotto's Bell Tower, Baptistery, Museo dell'Opera.</p>
+                             <p><strong>Entry:</strong> Cathedral free (long queue). Brunelleschi Pass needed for Dome/Tower/Museum/Baptistery. Giotto climb booked.</p>
+                             <a href="https://goo.gl/maps/xQ6kH2zJtU52" target="_blank">View Cathedral</a> | <a href="https://www.duomo.firenze.it/en/home" target="_blank">Official Site</a>
+                         </div>
+                     </div>
+                     <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Ponte+Vecchio" alt="Ponte Vecchio" class="card-img">
+                        <div class="card-content">
+                             <h3>Ponte Vecchio</h3>
+                             <p>Medieval stone bridge lined with shops (traditionally butchers, now jewelers and souvenirs).</p>
+                            <p><strong>Entry:</strong> Free to walk across.</p>
+                            <a href="https://goo.gl/maps/k3rG8pQyF7t" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Piazzale+Michelangelo" alt="Piazzale Michelangelo" class="card-img">
+                        <div class="card-content">
+                            <h3>Piazzale Michelangelo</h3>
+                             <p>Hilltop square offering panoramic views of Florence. Features a bronze replica of David.</p>
+                             <p><strong>Entry:</strong> Free. Taxi recommended for easier access.</p>
+                            <a href="https://goo.gl/maps/c4rW7dZ6f8K2" target="_blank">View on Map</a>
+                        </div>
+                     </div>
+                     <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Boboli/Bardini" alt="Boboli Gardens" class="card-img">
+                        <div class="card-content">
+                            <h3>Boboli / Bardini Gardens</h3>
+                            <p>Boboli: Grand Italian Renaissance gardens behind Pitti Palace (large, hilly). Bardini: Smaller, perhaps quieter gardens with great views.</p>
+                            <p><strong>Entry:</strong> Fee applies (often combined ticket options). Bardini may be less strenuous.</p>
+                            <a href="https://goo.gl/maps/W9eE5aF5eR52" target="_blank">Boboli</a> | <a href="https://goo.gl/maps/A9eE5aF5eR52" target="_blank">Bardini</a>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+
+             <div id="florence-food" class="tabcontent">
+                 <h3>Florentine Food Highlights</h3>
+                 <div class="highlight-box">
+                     <h4>Essential Florentine/Tuscan Dishes</h4>
+                     <ul>
+                        <li><strong>Bistecca alla Fiorentina:</strong> Thick-cut Chianina steak, traditionally served rare (order "ben cotta" for well-done, though purists disapprove!). Expensive, good for sharing.</li>
+                        <li><strong>Pappa al Pomodoro:</strong> Hearty tomato and bread soup.</li>
+                        <li><strong>Ribollita:</strong> Tuscan vegetable and bread soup (reboiled).</li>
+                        <li><strong>Lampredotto:</strong> Offal sandwich (cow's fourth stomach) - a local street food classic (optional!).</li>
+                        <li><strong>Cantucci con Vin Santo:</strong> Almond biscotti traditionally dipped in sweet dessert wine (can dip in juice/water).</li>
+                        <li><strong>Gelato:</strong> Excellent quality found throughout the city.</li>
+                    </ul>
+                </div>
+                <h4>Specific Recommendations (from your itinerary & list)</h4>
+                <ul>
+                    <li><strong>Pasta Making Class:</strong> Book ASAP! Check options/reviews.</li>
+                    <li><strong>Gelaterias:</strong> Gelateria dei Neri (<a href="https://maps.app.goo.gl/tN8V6Y9JkLp4tWsA8" target="_blank">Map</a>), Vivoli, Perché no!.</li>
+                    <li><strong>Sandwiches:</strong> All'Antico Vinaio (<a href="https://maps.app.goo.gl/hS8V6Y9JkLp4tWsB7" target="_blank">Map</a> - famous, huge, queues likely).</li>
+                    <li><strong>Markets:</strong> Mercato Centrale (<a href="https://goo.gl/maps/tQ6kH2zJtU52" target="_blank">Map</a> - upstairs food court, downstairs market), San Lorenzo Market (<a href="https://maps.app.goo.gl/rP9L8T7KkMq3yVfH7" target="_blank">Map</a> - leather outside, food inside).</li>
+                 </ul>
+                <h4>Your Restaurant Research List:</h4>
+                <p>Check recent reviews and consider booking, especially for dinner:</p>
+                <ul>
+                    <li>Trattoria Sostanza</li>
+                    <li>Osteria del Cinghiale Bianco (Oltrarno)</li>
+                    <li>Osteria Vini e Vecchi Sapori</li>
+                    <li>Trattoria Diladdarno (Oltrarno)</li>
+                    <li>Trattoria Sabatino (Oltrarno - potentially good value set menu)</li>
+                    <li>La Giostra (Often needs booking well in advance)</li>
+                    <li>Trattoria Garibaldi</li>
+                    <li>Buca Lapi</li>
+                    <li>Patti Palace / Schiaccia Passera (Likely Schiacciata places - flatbread sandwiches)</li>
+                </ul>
+             </div>
+
+             <div id="florence-tips" class="tabcontent">
+                <h3>Practical Tips (Florence)</h3>
+                <div class="highlight-box budget-tips">
+                     <h4>Money-Saving</h4>
+                     <ul>
+                        <li>Attempting Accademia on Free Sunday (May 4) saves money *if* successful, but costs time/potential stress.</li>
+                        <li>Utilize Mercato Centrale food court or sandwiches for affordable lunches.</li>
+                        <li>Walk! Florence's center is very compact.</li>
+                        <li>Drink tap water ("Acqua del Rubinetto").</li>
+                    </ul>
+                </div>
+                <h4>Transportation</h4>
+                <ul>
+                    <li>Walking is the best way to explore the historic center.</li>
+                    <li>Local ATAF buses run, buy tickets beforehand at 'Tabacchi' shops. Useful for reaching Piazzale Michelangelo if not taking a taxi.</li>
+                    <li>Taxis are available but more expensive. Essential for getting to the station quickly on May 4th.</li>
+                </ul>
+                <h4>Accommodation</h4>
+                <ul>
+                    <li><strong>Hotel Santa Croce:</strong> [BOOKED] Located near Basilica Santa Croce. Good base for walking. Confirm luggage storage possibility after 11:30 AM checkout on May 4th. (<a href="https://maps.app.goo.gl/w8z6nN689gC9uYtA8" target="_blank">Approx Map</a>)</li>
+                 </ul>
+                <div class="warning-box">
+                    <h4>Departure Day Plan (May 4th)</h4>
+                    <p>This day requires precise timing. Queuing for Accademia from 7 AM leaves very little room for delay. Have a backup plan. A quick lunch and a **TAXI** to the station are crucial to make your 4:28 PM train.</p>
+                </div>
+             </div>
+        </section>
+
+        <!-- ==================== ROME SECTION ==================== -->
+        <section id="rome">
+             <h2>Rome (May 4-9)</h2>
+             <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'rome-overview-2')">Overview</button>
+                <button class="tablinks" onclick="openTab(event, 'rome-attractions-2')">Attractions</button>
+                <button class="tablinks" onclick="openTab(event, 'rome-food-2')">Food</button>
+                 <button class="tablinks" onclick="openTab(event, 'rome-tips-2')">Tips</button>
+            </div>
+
+             <div id="rome-overview-2" class="tabcontent">
+                 <p>Return to the Eternal City! This time, settle in for a longer stay, balancing iconic sightseeing with your remote work schedule. You'll delve deeper into Ancient Rome, explore Vatican City, and soak up the unique atmosphere of neighbourhoods like Trastevere and Monti.</p>
+                 <div class="map-container">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.43831176304!2d12.390487714086365!3d41.9097909071431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2sRome%2C%20Metropolitan%20City%20of%20Rome%20Capital%2C%20Italy!5e0!3m2!1sen!2sus!4v1712608149171!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+                 <h3>Daily Breakdown (Rome)</h3>
+                <ul>
+                    <li><strong>Day 9 (May 4, Sat):</strong> Arrive Rome ~6:00 PM. Check-in Pinta Airbnb [BOOKED]. Settle in, dinner near Airbnb.</li>
+                    <li><strong>Day 10 (May 5, Sun):</strong> Remote Work (10-12, 14-17). Evening gentle exploration / Piazza stroll. <strong>[WORK DAY 3]</strong></li>
+                    <li><strong>Day 11 (May 6, Mon):</strong> Remote Work (10-12, 14-17). Evening explore Trastevere or Monti. <strong>[WORK DAY 4]</strong></li>
+                    <li><strong>Day 12 (May 7, Tue):</strong> AM Piazza Navona, Pantheon, Trevi Fountain. Lunch. PM Vatican Museums (4 PM Entry) [BOOKED] & St. Peter's Basilica/Square.</li>
+                    <li><strong>Day 13 (May 8, Wed):</strong> AM Colosseum/Forum/Palatine Hill [BOOK ASAP!]. Lunch. PM Rest / Capitoline Museums / Jewish Ghetto.</li>
+                    <li><strong>Day 14 (May 9, Thu):</strong> AM Rome (Checkout Airbnb, visit a Piazza?). Early Lunch. Train to Naples (2:15 PM).</li>
+                 </ul>
+                 <div class="highlight-box remote-work">
+                    <h4>Remote Work (Rome)</h4>
+                    <p>Working from your Airbnb [BOOKED]. Your schedule (10-12, 14-17) allows for decent evening exploration time. Ensure good WiFi.</p>
+                 </div>
+            </div>
+
+            <div id="rome-attractions-2" class="tabcontent">
+                <h3>Rome Highlights</h3>
+                 <div class="card-container">
+                     <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Colosseum+%26+Forum" alt="Colosseum" class="card-img">
+                        <div class="card-content">
+                            <h3>Colosseum, Roman Forum, Palatine Hill</h3>
+                            <p>The heart of Ancient Rome. Amphitheater, government center, imperial residences.</p>
+                            <p><strong>Entry:</strong> Fee applies. Booking standard/arena ticket or tour via CoopCulture **ESSENTIAL**. Underground tix very hard to get.</p>
+                            <a href="https://goo.gl/maps/A5fS7yN6zR42" target="_blank">View Colosseum Map</a> | <a href="https://ticketing.colosseo.it/en/" target="_blank">Official Tickets</a>
+                         </div>
+                     </div>
+                     <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Vatican+City" alt="Vatican Museums" class="card-img">
+                         <div class="card-content">
+                            <h3>Vatican City</h3>
+                             <p>Includes St. Peter's Basilica (free entry, queue likely), St. Peter's Square, and Vatican Museums & Sistine Chapel (paid entry).</p>
+                            <p><strong>Entry:</strong> Basilica free, Museums booked (4 PM May 7). Modest dress required.</p>
+                            <a href="https://goo.gl/maps/yJ5fK9yGvE22" target="_blank">View on Map</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Pantheon" alt="Pantheon" class="card-img">
+                        <div class="card-content">
+                            <h3>Pantheon</h3>
+                            <p>Remarkably preserved ancient Roman temple, now a church, famous for its oculus dome.</p>
+                            <p><strong>Entry:</strong> Free (check opening times).</p>
+                            <a href="https://goo.gl/maps/xW8H5vJ4tP32" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Trevi+Fountain" alt="Trevi Fountain" class="card-img">
+                        <div class="card-content">
+                            <h3>Trevi Fountain</h3>
+                            <p>Iconic, large Baroque fountain. Very crowded, best seen early morning or late evening.</p>
+                            <p><strong>Entry:</strong> Free.</p>
+                             <a href="https://goo.gl/maps/qN7xJ5sGzK22" target="_blank">View on Map</a>
+                         </div>
+                     </div>
+                     <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Piazza+Navona" alt="Piazza Navona" class="card-img">
+                        <div class="card-content">
+                            <h3>Piazza Navona</h3>
+                            <p>Famous Baroque square featuring Bernini's Fountain of Four Rivers.</p>
+                             <p><strong>Entry:</strong> Free.</p>
+                            <a href="https://goo.gl/maps/xW8H5vJ4tP32" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Trastevere" alt="Trastevere Neighborhood" class="card-img">
+                        <div class="card-content">
+                            <h3>Trastevere</h3>
+                            <p>Charming neighborhood across the Tiber with ivy-clad buildings, artisan shops, lively restaurants and bars.</p>
+                            <p><strong>Entry:</strong> Free to explore.</p>
+                            <a href="https://goo.gl/maps/D8sV7fK6xM92" target="_blank">View on Map</a>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+
+             <div id="rome-food-2" class="tabcontent">
+                <h3>Roman Food Highlights</h3>
+                 <div class="highlight-box">
+                     <h4>Essential Roman Dishes</h4>
+                    <ul>
+                        <li><strong>Pasta alla Carbonara:</strong> Eggs, Pecorino Romano, guanciale (ask without), black pepper.</li>
+                        <li><strong>Pasta Cacio e Pepe:</strong> Pecorino Romano cheese and black pepper - simple, delicious.</li>
+                        <li><strong>Pasta all'Amatriciana:</strong> Guanciale (ask without), pecorino, tomato sauce.</li>
+                        <li><strong>Saltimbocca alla Romana:</strong> Veal cutlets with prosciutto and sage (ensure cooked well if trying).</li>
+                        <li><strong>Supplì:</strong> Fried rice balls, usually with tomato and mozzarella.</li>
+                        <li><strong>Carciofi alla Romana / alla Giudia:</strong> Artichokes cooked Roman style (braised) or Jewish style (deep-fried - seasonal).</li>
+                        <li><strong>Pizza al Taglio:</strong> Roman pizza by the slice/weight.</li>
+                        <li><strong>Maritozzi:</strong> Sweet buns often filled with whipped cream.</li>
+                        <li><strong>Gelato:</strong> Find artisanal gelaterias.</li>
+                    </ul>
+                 </div>
+                <h4>Food Areas to Explore</h4>
+                <ul>
+                    <li><strong>Trastevere:</strong> Full of traditional trattorias (wander off main streets).</li>
+                    <li><strong>Monti:</strong> Trendy area near Colosseum with good restaurants and wine bars.</li>
+                    <li><strong>Testaccio:</strong> Authentic foodie neighborhood, known for traditional Roman cuisine.</li>
+                    <li><strong>Jewish Ghetto:</strong> Unique Roman-Jewish cuisine (Carciofi alla Giudia).</li>
+                    <li><strong>Near Pantheon/Navona:</strong> Many options, some touristy - check reviews. Look for Pizza al Taglio places.</li>
+                 </ul>
+             </div>
+
+             <div id="rome-tips-2" class="tabcontent">
+                 <h3>Practical Tips (Rome)</h3>
+                 <div class="highlight-box budget-tips">
+                    <h4>Money-Saving</h4>
+                     <ul>
+                        <li>Utilize free attractions: Pantheon, Trevi, Piazza Navona, St. Peter's Basilica (queue).</li>
+                         <li>Drink from 'nasoni' water fountains.</li>
+                         <li>Enjoy affordable Pizza al Taglio or Supplì for quick lunches.</li>
+                        <li>Consider a public transport pass if using it frequently, but the center is walkable.</li>
+                    </ul>
+                </div>
+                 <h4>Transportation</h4>
+                 <ul>
+                    <li>Walk when possible.</li>
+                    <li>Metro (Lines A & B) useful for reaching Vatican, Colosseum, Termini Station.</li>
+                    <li>Buses cover areas not served by metro. Buy tickets before boarding.</li>
+                    <li>Be vigilant against pickpockets, especially on transport and crowded areas.</li>
+                 </ul>
+                 <h4>Accommodation</h4>
+                <ul>
+                    <li><strong>Pinta Airbnb:</strong> [BOOKED] - Note down the exact address and contact details. Confirm check-in/out procedures.</li>
+                </ul>
+             </div>
+        </section>
+
+        <!-- ==================== NAPLES SECTION ==================== -->
+         <section id="naples">
+            <h2>Naples & Coast (May 9-13)</h2>
+             <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'naples-overview')">Overview</button>
+                <button class="tablinks" onclick="openTab(event, 'naples-attractions')">Attractions</button>
+                 <button class="tablinks" onclick="openTab(event, 'naples-food')">Food</button>
+                 <button class="tablinks" onclick="openTab(event, 'naples-tips')">Tips</button>
+             </div>
+
+             <div id="naples-overview" class="tabcontent">
+                <p>Your final destination is Naples, a city pulsating with energy, history, and flavor. Use it as your base for exploring the ancient ruins of Pompeii/Herculaneum and taking a day trip to the stunning island of Capri or the Amalfi Coast village of Positano. Your last two work days and departure will be from here.</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193110.29057591352!2d14.131799419797896!3d40.83330997060206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b0866db7afaeb%3A0xd23a43cc658cb87e!2sNaples%2C%20Metropolitan%20City%20of%20Naples%2C%20Italy!5e0!3m2!1sen!2sus!4v1712608452430!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <h3>Daily Breakdown (Naples Base)</h3>
+                <ul>
+                    <li><strong>Day 14 (May 9, Thu):</strong> Arrive Naples ~3:28 PM. Check-in San Ferdinando Airbnb [BOOKED] by 4 PM. Evening Trip to Pompeii/Herculaneum via Circumvesuviana. Pizza Dinner.</li>
+                    <li><strong>Day 15 (May 10, Fri):</strong> Early train to Sorrento. Explore town & Bagni Regina Giovanna. Lunch. Train back. Evening Naples Lungomare.</li>
+                    <li><strong>Day 16 (May 11, Sat):</strong> CHOOSE ONE Day Trip: Capri (Ferry) OR Positano (Ferry, potentially via Sorrento). Book ferries.</li>
+                    <li><strong>Day 17 (May 12, Sun):</strong> Remote Work (10-12, 14-17). Explore Piazza Plebiscito. Quick Lunch. Final dinner. Pack. <strong>[WORK DAY 5]</strong></li>
+                    <li><strong>Day 18 (May 13, Mon):</strong> AM Remote Work. Late Checkout?. Transfer to NAP airport (Alibus/Taxi). Depart 7:15 PM. <strong>[WORK DAY 6 + DEPARTURE]</strong></li>
+                </ul>
+                 <div class="highlight-box remote-work">
+                     <h4>Remote Work (Naples)</h4>
+                     <p>Working from your Airbnb [BOOKED]. Crucial final work days, including departure day. Confirm late checkout possibility or plan where to work if needed after checkout before heading to the airport.</p>
+                </div>
+             </div>
+
+            <div id="naples-attractions" class="tabcontent">
+                <h3>Naples & Area Highlights</h3>
+                 <div class="card-container">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Pompeii+/+Herculaneum" alt="Pompeii Ruins" class="card-img">
+                        <div class="card-content">
+                            <h3>Pompeii / Herculaneum</h3>
+                            <p>Ancient Roman cities preserved by the eruption of Mt. Vesuvius in 79 AD. Pompeii is vast, Herculaneum smaller and better preserved.</p>
+                            <p><strong>Entry:</strong> Fee applies. Book online. Reach via Circumvesuviana train.</p>
+                             <a href="https://www.pompeiisites.org/en/" target="_blank">Official Site</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Capri" alt="Capri Island" class="card-img">
+                         <div class="card-content">
+                            <h3>Capri (Day Trip Option)</h3>
+                            <p>Glamorous island known for stunning sea stacks (Faraglioni), Gardens of Augustus, Anacapri, Monte Solaro chairlift.</p>
+                            <p><strong>Transport:</strong> Ferry from Molo Beverello (~50 min). Book tickets.</p>
+                            <a href="https://goo.gl/maps/X5wV6yK9zR52" target="_blank">Gardens of Augustus Map</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Positano" alt="Positano Village" class="card-img">
+                         <div class="card-content">
+                            <h3>Positano (Day Trip Option)</h3>
+                            <p>Iconic Amalfi Coast village with colourful houses cascading down to the sea. Steep walks.</p>
+                             <p><strong>Transport:</strong> Ferry from Naples (direct or via Sorrento). Book tickets.</p>
+                             <a href="https://goo.gl/maps/X5wV6yK9zR52" target="_blank">View on Map (Beach Area)</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Sorrento" alt="Sorrento View" class="card-img">
+                        <div class="card-content">
+                            <h3>Sorrento (Day Trip)</h3>
+                             <p>Clifftop town overlooking Bay of Naples. Base for exploring Bagni Regina Giovanna. Reach via Circumvesuviana.</p>
+                             <p><strong>Highlights:</strong> Piazza Tasso, Villa Comunale Views, Marina Grande.</p>
+                            <a href="https://goo.gl/maps/F7wX4zH8zQ32" target="_blank">Piazza Tasso Map</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                         <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Naples+Lungomare" alt="Naples Waterfront" class="card-img">
+                         <div class="card-content">
+                             <h3>Naples Lungomare Caracciolo</h3>
+                            <p>Scenic seafront promenade with views of Vesuvius, Castel dell'Ovo, and the Bay of Naples.</p>
+                             <p><strong>Activity:</strong> Perfect for an evening stroll.</p>
+                             <a href="https://goo.gl/maps/Q8xW5rG6yH12" target="_blank">View on Map</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/300x200/1a5276/ffffff?text=Piazza+Plebiscito" alt="Piazza del Plebiscito" class="card-img">
+                        <div class="card-content">
+                            <h3>Piazza del Plebiscito</h3>
+                            <p>Grand public square in Naples, flanked by the Royal Palace and the Basilica of San Francesco di Paola.</p>
+                             <p><strong>Entry:</strong> Free to explore square.</p>
+                             <a href="https://goo.gl/maps/Z9wV7fL6zN12" target="_blank">View on Map</a>
+                         </div>
+                    </div>
+                 </div>
+             </div>
+
+            <div id="naples-food" class="tabcontent">
+                 <h3>Naples & Campania Food</h3>
+                 <div class="highlight-box">
+                    <h4>Essential Neapolitan Dishes</h4>
+                    <ul>
+                         <li><strong>Pizza Napoletana (Margherita/Marinara):</strong> The original! Soft, foldable crust, simple high-quality toppings. Must try from a traditional pizzeria.</li>
+                        <li><strong>Pizza Fritta:</strong> Fried pizza dough, often stuffed with ricotta, provola, cicoli (pork - ask without).</li>
+                        <li><strong>Sfogliatella (Riccia/Frolla):</strong> Shell-shaped pastry filled with ricotta mixture. Riccia is flaky, Frolla is shortcrust.</li>
+                        <li><strong>Spaghetti alle Vongole:</strong> Spaghetti with clams, garlic, olive oil, white wine (ask without).</li>
+                         <li><strong>Gnocchi alla Sorrentina (Sorrento):</strong> Potato gnocchi baked with tomato sauce, mozzarella, basil.</li>
+                        <li><strong>Caprese Salad (Capri Origin):</strong> Fresh mozzarella, tomatoes, basil.</li>
+                         <li><strong>Delizia al Limone (Amalfi Coast):</strong> Lemon sponge cake filled with lemon cream.</li>
+                    </ul>
+                 </div>
+                 <h4>Specific Recommendations (from your itinerary)</h4>
+                 <ul>
+                     <li><strong>Pizzerias (Naples):</strong> L'Antica Pizzeria da Michele (<a href="https://goo.gl/maps/Y7wX4zH8zQ32" target="_blank">Map</a>), Gino Sorbillo (<a href="https://goo.gl/maps/Z6wT5zG7yP82" target="_blank">Map</a>) - Expect queues at famous spots.</li>
+                    <li><strong>Lunch in Sorrento:</strong> Near Marina Grande (<a href="https://goo.gl/maps/T9wX5zG5zP22" target="_blank">Map</a>) for seafood/local dishes.</li>
+                    <li><strong>Pastries:</strong> Look for Pasticcerie selling fresh Sfogliatelle.</li>
+                 </ul>
+             </div>
+
+            <div id="naples-tips" class="tabcontent">
+                 <h3>Practical Tips (Naples & Coast)</h3>
+                 <div class="highlight-box budget-tips">
+                     <h4>Money-Saving</h4>
+                     <ul>
+                        <li>Pizza in Naples is incredibly delicious and often very affordable.</li>
+                        <li>Circumvesuviana train is cheap for reaching Pompeii/Herculaneum/Sorrento.</li>
+                        <li>Ferries can be pricey; book in advance if possible or compare operators.</li>
+                         <li>Enjoying the views and atmosphere is free!</li>
+                     </ul>
+                 </div>
+                <h4>Transportation</h4>
+                <ul>
+                    <li><strong>Naples City:</strong> Use metro/bus for longer distances. Center is walkable but can be chaotic. Be aware of surroundings.</li>
+                    <li><strong>Circumvesuviana:</strong> Essential for Pompeii/Herculaneum/Sorrento. Basic train, can be crowded, watch belongings. Runs from lower level of Napoli Centrale/Garibaldi.</li>
+                    <li><strong>Ferries:</strong> Depart from Molo Beverello (fast ferries) or Calata Porta di Massa (slower, cheaper ferries) for Capri/Sorrento/Positano. Check schedules and book online (NLG, Alilauro, SNAV, Caremar).</li>
+                    <li><strong>Airport Transfer:</strong> Alibus shuttle is efficient from station/port to NAP airport. Taxi is quicker but more expensive (use official taxis, agree fare or ensure meter).</li>
+                 </ul>
+                 <h4>Accommodation</h4>
+                 <ul>
+                     <li><strong>San Ferdinando Airbnb:</strong> [BOOKED] Area near Piazza Plebiscito/seafront. Confirm check-in/out details, WiFi, and possibility/cost of late checkout on May 13th. (<a href="https://maps.app.goo.gl/dC8UoHqN8kG7yTzL9" target="_blank">Approx Map</a>)</li>
+                 </ul>
+                 <div class="warning-box">
+                     <h4>Departure Day Plan (May 13th)</h4>
+                     <p>Working on departure day requires careful coordination. Confirm your latest possible work finish time. Know your Airbnb checkout time (arrange late checkout if needed/possible). Allow ample time for airport transfer (at least 1 hour) and airport procedures (3 hours).</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- ==================== GENERAL SECTIONS ==================== -->
+        <section id="muslim-friendly">
+            <h2>Muslim-Friendly Travel in Italy</h2>
+            <div class="highlight-box muslim-friendly">
+                <h3>Prayer Spaces</h3>
+                <ul>
+                    <li><strong>Padova/Vicenza:</strong> Likely smaller Islamic centers or prayer rooms, may require local inquiry or use of apps like Muslim Pro. Accommodation is most reliable.</li>
+                    <li><strong>Bologna:</strong> Centro Islamico di Bologna and other smaller mosques/prayer rooms exist.</li>
+                    <li><strong>Florence:</strong> Islamic Center of Florence (Centro Islamico di Firenze).</li>
+                    <li><strong>Rome:</strong> The Grand Mosque of Rome (Moschea di Roma) - major center. Smaller prayer spaces also available.</li>
+                    <li><strong>Naples:</strong> Islamic Center of Naples (Centro Islamico di Napoli).</li>
+                </ul>
+            </div>
+            <h3>Halal Food Guide</h3>
+            <p>Availability varies:</p>
+            <ul>
+                <li><strong>Major Cities (Bologna, Florence, Rome, Naples):</strong> Best chance for dedicated Halal butchers and restaurants (Middle Eastern, South Asian, Kebab shops).</li>
+                <li><strong>Padova/Vicenza/Smaller Towns:</strong> Limited Halal-specific options. Focus on vegetarian (pasta pomodoro, pizza Margherita/vegetariana - check cheese rennet if very strict), seafood dishes.</li>
+                <li><strong>Supermarkets:</strong> Offer fruit, vegetables, bread, eggs, yogurt, some cheeses (check labels).</li>
+                <li><strong>Communicate Clearly:</strong> Ask "Senza maiale?" (Without pork?), "Senza alcool/vino?" (Without alcohol/wine?).</li>
+            </ul>
+            <h3>General Tips</h3>
+            <ul>
+                <li>Download offline maps and prayer time apps.</li>
+                <li>Pack a travel prayer mat.</li>
+                <li>Ensure reliable WiFi at accommodations for work.</li>
+                <li>Dress modestly when visiting any religious site (churches included).</li>
+            </ul>
+        </section>
+
+        <section id="budget">
+            <h2>Budget Notes & Money-Saving Tips</h2>
+            <div class="highlight-box budget-tips">
+                <h3>Budget Consideration (€4000 Target)</h3>
+                <p>Your itinerary now spans 18 days and includes significant travel between 5 base locations. The original €4000 target (€222/day for two) will not be maintained depending on spending.</p>
+                <h4>Estimated Breakdown (Revised Thoughts - NEEDS CAREFUL TRACKING)</h4>
+                 <ul>
+                    <li><strong>Accommodation (17 nights):</strong> €3200 (Mix of Airbnb/Hotels already booked)</li>
+                     <li><strong>Transportation:</strong> €500-€600 (Booked flights/trains + remaining trains, local transport, ferries, airport transfers)</li>
+                    <li><strong>Food:</strong> €500-€600 (Mix eating out with eating it if you want extra spending cooking class, market snacks)</li>
+                    <li><strong>Attractions/Activities:</strong> €250-€350 (Museums, gondola, climbs, tours - depends on final choices)</li>
+                    <li><strong>Miscellaneous:</strong> €200 (Emergency, souvenirs)</li>
+                    <li><strong>Potential Total:** €4500 - €5000+ (Suggests the €4000 is extremely tight)</li>
+                </ul>
+            </div>
+            <h3>Top Money-Saving Tips Recap</h3>
+            <ul>
+                <li><strong>Book remaining trains/ferries ASAP.</strong></li>
+                <li>Utilize supermarkets and markets for breakfasts and snacks.</li>
+                <li>Drink tap water.</li>
+                <li>Take advantage of free sights (piazzas, churches exteriors, parks).</li>
+                <li>Walk/use public transport passes.</li>
+                <li>Choose trattorias/authentic restaurants over fancy touristy restaurants for most meals.</li>
+                <li>Be strategic about paid attractions - prioritize what matters most.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Italy Travel Guide: 18-Day Itinerary (April 26 - May 13, 2025)</p>
+            <p>Padova → Bologna → Florence → Rome → Naples</p>
+            <p>Have an amazing and memorable trip!</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            var targetElement = document.getElementById(tabName);
+            if (targetElement) {
+                targetElement.style.display = "block";
+            }
+            if (evt && evt.currentTarget) {
+                 evt.currentTarget.className += " active";
+            }
+        }
+
+        // Auto-open the first tab in the first city section
+        var defaultOpenButton = document.querySelector('#padova .tablinks'); // Target first tab in #padova
+        if (defaultOpenButton) {
+             defaultOpenButton.click();
+         } else {
+             // Fallback if #padova structure changes or isn't first
+             var firstTabButton = document.querySelector('.tablinks');
+             if(firstTabButton) firstTabButton.click();
+         }
+    </script>
+</body>
+</html>
